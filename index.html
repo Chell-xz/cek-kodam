@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cek Kodam Kamu</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Meta Property Description Original -->
+    <meta property="og:title" content="Cek Kodam" />
+    <meta property="og:description" content="Mari kita buktikan kodam siapa yang paling kuat." />
+    <meta property="og:url" content="https://ems-links.netlify.app/" />
+    <meta property="og:image" content="https://ems-links.netlify.app/assets/images/logo.jpg" />
+    <meta property="og:image:secure_url" content="https://ems-links.netlify.app/assets/images/logo.jpg" />
+    <meta property="og:author" content="Marchell Kevandra" />
+    <!-- Meta Property Description Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://ems-links.netlify.app/" />
+    <meta property="twitter:title" content="Cek Kodam" />
+    <meta property="twitter:description" content="Mari kita buktikan kodam siapa yang paling kuat." />
+    <meta property="twitter:image:secure_url" content="https://ems-links.netlify.app/assets/images/logo.jpg" />
+    <meta property="twitter:image" content="https://ems-links.netlify.app/assets/images/logo.jpg" />
+    <meta property="twitter:author" content="Marchell Kevandra" />
+    <!-- Link Rel Assets Icon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="https://ems-links.netlify.app/assets/images/logo.jpg" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://ems-links.netlify.app/assets/images/logo.jpg" />
+    <!-- Link Rel Assets Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
+    <!-- Link Rel Assets Style -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+   <body>
+    <div class="max-w-md w-full bg-white p-10 rounded shadow-lg m-auto mt-48">
+      <h2 class="text-center text-2xl font-bold">Cek Kodam</h2>
+      <div class="text-error"></div>
+      <!-- Form Checked -->
+      <form id="FormKodam">
+        <div class="mb-4">
+          <input type="text" id="nama" placeholder="Masukan Nama Kalian" class="shadow py-2 px-3 mt-4 border rounded w-full text-gray-700 focus:outline-none" />
+        </div>
+        <div class="mb-4 flex justify-center">
+          <button type="submit" class="bg-red-700 hover:bg-red-500 text-white py-2 px-4 rounded-full w-full transition duration-500 ease-in-out Btnx">Cek Kodam</button>
+        </div>
+        <div class="LoadingContainer">
+          <div class="spinner"></div>
+        </div>
+        <div id="EndKodam"></div>
+        <div id="NextPage">
+          <p class="text-center text-1xl">
+            Mainkan Lainnya <a class="cursor-pointer hover:text-red-500 transition duration-500 ease-in-out" onclick="OpenMenu()"><b>Disini</b></a>
+          </p>
+        </div>
+        <div class="VzIcon text-center">
+          <i class="bx bxl-instagram" onclick="MkxXxInsta()"></i>
+          <i class="bx bxl-tiktok" onclick="MkxXxTiktok()"></i>
+          <i class="bx bxl-facebook" onclick="MkxXxFacebook()"></i>
+        </div>
+      </form>
+    </div>
+    <div class="VzBody">
+      <div class="VzBodyOverlay"></div>
+      <div class="max-w-md w-full bg-white rounded shadow-lg m-auto VzBodyContent">
+        <div class="VzBodyHeader">
+          <h4 class="font-bold">Menu</h4>
+          <i class="bx bx-x" onclick="CloseMenu()"></i>
+        </div>
+        <div class="VzBodyList">
+          <div class="VzBodyListContent">
+            <i class="bx bx-link"></i>
+            <p>Love People</p>
+          </div>
+          <div class="VzBodyListContent">
+            <i class="bx bx-link"></i>
+            <p>Check Weather</p>
+          </div>
+          <div class="VzBodyListContent">
+            <i class="bx bx-link"></i>
+            <p>Vanz Chat App</p>
+          </div>
+          <div class="VzBodyListContent">
+            <i class="bx bx-link"></i>
+            <p>Spin</p>
+          </div>
+          <div class="VzBodyListFooter">
+            <p class="text-center">Credit By <b class="cursor-pointer hover:text-red-500 transition duration-500 ease-in-out">Marchell Kevandra</b></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact -->
+    <div class="VzMenu">.</div>
+    <script src="vz.js"></script>
+  </body>
+</html>
